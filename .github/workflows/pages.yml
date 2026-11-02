@@ -1,8 +1,12 @@
 name: Deploy website to GitHub Pages
 
+# Builds on every push to main and the original branch (kept in sync).
+# Publishes only from the repo's default branch, and only when
+# Settings -> Pages -> Source is "GitHub Actions". Until then the build still
+# runs (tests + photos) and the branch-mode Pages site keeps serving.
 on:
   push:
-    branches: [main]
+    branches: [main, claude/gifted-noether-mo8yw5]
   workflow_dispatch:
 
 permissions:
@@ -17,6 +21,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      publish: ${{ steps.mode.outputs.publish }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -35,9 +41,22 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+      - id: mode
+        name: Can this run publish?
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          type=$(gh api "repos/${{ github.repository }}/pages" --jq .build_type || echo unknown)
+          if [ "$type" = "workflow" ] && [ "${{ github.ref_name }}" = "${{ github.event.repository.default_branch }}" ]; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Built but not published. Pages source is '$type' (needs 'workflow' = GitHub Actions) and this branch is '${{ github.ref_name }}' (publishes from '${{ github.event.repository.default_branch }}')."
+          fi
 
   deploy:
     needs: build
+    if: needs.build.outputs.publish == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
