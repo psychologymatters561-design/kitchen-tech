@@ -5,3 +5,4 @@ data/*.db-*
 *.log
 .DS_Store
 kitchen-tech-preview.zip
+dist/

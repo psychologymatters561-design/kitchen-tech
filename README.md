@@ -30,6 +30,14 @@ tests/                    node:test suites (API + cost engine)
 
 `preview/` has every page as **one self-contained file** (styles, fonts, animations and data inside). Download the folder and double-click `preview/aanch.html` or `preview/index.html`. It works offline and on a phone. Forms in the preview send your details to WhatsApp, because there is no server behind a single file. Rebuild after any change with `npm run preview`.
 
+## Live site (GitHub Pages)
+
+Every push to `main` runs `.github/workflows/pages.yml`: tests, then `scripts/build-static.js`, which downloads the product photos from the old site, converts them to WebP, and publishes the static site to **https://psychologymatters561-design.github.io/kitchen-tech/**. On the static host, orders and enquiries go to WhatsApp, and the price-less buy flow books on WhatsApp. The Node server (database, admin, Razorpay) needs a Node host; see the checklist below.
+
+One-time setup on GitHub: **Settings → Pages → Source: GitHub Actions**, and **Settings → General → Default branch: main**. The preview address carries `noindex`; set the repository variable `STAGING=0` once the real domain points here.
+
+To use kitchentechindia.com: add it under Settings → Pages → Custom domain, then point the domain's DNS at GitHub Pages.
+
 ## Run it
 
 Requires **Node 22.13+**.
