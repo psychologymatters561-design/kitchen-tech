@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Checkout: Aanch infrared cooktop | Kitchen Tech India</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f4ede2">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body data-header="light" data-wa-text="Hi Kitchen Tech, I need help placing my Aanch order.">
+<a class="skip" href="#main">Skip to content</a>
+<main id="main">
+  <section class="page-hero theme-light" style="padding-bottom:24px">
+    <div class="wrap">
+      <p class="crumbs"><a href="aanch.html">Aanch</a> / Checkout</p>
+      <h1 class="h2">Almost yours.</h1>
+    </div>
+  </section>
+  <section class="theme-light" style="padding-bottom:clamp(80px,10vw,140px)">
+    <div class="wrap co" id="co">
+      <div>
+        <form class="form co-form form-card" id="order-form" novalidate>
+          <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+          <div class="notice" id="price-note" hidden></div>
+          <h2 class="h3">Delivery details</h2>
+          <div class="form-row">
+            <div class="field"><label for="o-name">Full name</label><input class="input" id="o-name" name="name" autocomplete="name" required><span class="error"></span></div>
+            <div class="field"><label for="o-phone">Mobile number</label><input class="input" id="o-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile" required><span class="error"></span></div>
+          </div>
+          <div class="field"><label for="o-address">House, street, area</label><textarea class="textarea" id="o-address" name="address" autocomplete="street-address" style="min-height:84px" required></textarea><span class="error"></span></div>
+          <div class="form-row" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr))">
+            <div class="field"><label for="o-pin">PIN code</label><input class="input" id="o-pin" name="pincode" inputmode="numeric" autocomplete="postal-code" maxlength="6" required><span class="error"></span></div>
+            <div class="field"><label for="o-city">City</label><input class="input" id="o-city" name="city" autocomplete="address-level2" required><span class="error"></span></div>
+            <div class="field"><label for="o-state">State</label><input class="input" id="o-state" name="state" autocomplete="address-level1"><span class="error"></span></div>
+          </div>
+          <div class="field"><label for="o-email">Email <span class="muted">(optional, for your receipt)</span></label><input class="input" id="o-email" name="email" type="email" autocomplete="email"><span class="error"></span></div>
+          <h2 class="h3" style="margin-top:10px">How would you like to pay?</h2>
+          <div class="radio-cards field">
+            <label class="radio-card"><input type="radio" name="paymentMethod" value="online" id="pm-online"><span class="dot"></span><span><strong>Pay now: UPI, card, netbanking</strong><br><span class="muted" id="pm-online-note">Secure payment by Razorpay.</span></span></label>
+            <label class="radio-card"><input type="radio" name="paymentMethod" value="cod" id="pm-cod" checked><span class="dot"></span><span><strong>Cash on delivery</strong><br><span class="muted">Pay when it reaches your door.</span></span></label>
+            <span class="error"></span>
+          </div>
+          <div class="field"><label for="o-notes">Anything we should know? <span class="muted">(optional)</span></label><input class="input" id="o-notes" name="notes" placeholder="Landmark, best time to deliver"><span class="error"></span></div>
+          <button class="btn btn-lg btn-block" type="submit" id="place">Place order</button>
+          <p class="form-note">By ordering you agree to our <a href="policies.html#terms">terms</a>, <a href="policies.html#returns">returns</a> and <a href="policies.html#privacy">privacy</a> policies.</p>
+        </form>
+
+        <div class="co-done form-card" role="status" tabindex="-1" id="done">
+          <p class="eyebrow hot">Order placed</p>
+          <h2 class="h2" style="margin:12px 0 16px">Thank you. Your aanch is on its way.</h2>
+          <p>Your order ID is</p>
+          <p class="order-id" id="done-id">KT-0000-XXXXX</p>
+          <p style="margin-top:16px" id="done-msg">We'll call or WhatsApp you to confirm before we ship.</p>
+          <div class="btn-row" style="margin-top:16px"><a class="btn btn-wa" id="done-wa" href="#" target="_blank" rel="noopener">Confirm on WhatsApp</a><a class="btn btn-ghost" href="aanch.html">Back to Aanch</a></div>
+        </div>
+      </div>
+
+      <aside class="co-summary" aria-label="Order summary">
+        <p class="eyebrow">Your order</p>
+        <div class="co-line"><span><strong>Aanch infrared cooktop</strong><br><small class="muted">Works with any bartan. No gas.</small></span></div>
+        <div class="co-line"><span>Quantity</span><span class="qty" style="border-color:rgba(244,237,226,.2)"><button type="button" data-q="-1" aria-label="One less">−</button><output id="qty">1</output><button type="button" data-q="1" aria-label="One more">+</button></span></div>
+        <div class="co-line"><span>Price</span><span id="s-unit"></span></div>
+        <div class="co-line" id="s-disc-row" hidden><span>Prepaid discount</span><span id="s-disc" style="color:#9fe0a9"></span></div>
+        <div class="co-line"><span>Delivery</span><span data-site="product.freeDelivery" data-tbc="to confirm"></span></div>
+        <hr class="hr">
+        <div class="co-line" style="align-items:baseline"><span>Total</span><span class="co-total" id="s-total"></span></div>
+        <p class="muted" style="font-size:.86rem;margin:0">Final price is confirmed by our server when you place the order.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section-tight theme-light-2" id="track">
+    <div class="wrap-narrow">
+      <h2 class="h3">Track an order</h2>
+      <form class="form" id="track-form" style="margin-top:14px">
+        <div class="form-row">
+          <div class="field"><label for="t-id">Order ID</label><input class="input" id="t-id" name="id" placeholder="KT-2611-XXXXX" required></div>
+          <div class="field"><label for="t-phone">Mobile used for the order</label><input class="input" id="t-phone" name="phone" type="tel" required></div>
+        </div>
+        <button class="btn btn-dark" type="submit">Check status</button>
+        <p id="track-out" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/SplitText.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script type="module" src="assets/js/checkout.js"></script>
+</body>
+</html>

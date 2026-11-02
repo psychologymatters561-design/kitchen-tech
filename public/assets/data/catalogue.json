@@ -1,0 +1,1585 @@
+{
+ "_readme": "Catalogue transcribed from the brief (crawl of kitchentechindia.com, Nov 2026). Specs are the dealer specs as listed. img = original site URL (re-host before launch). Items without img render designed line-art.",
+ "png": {
+  "note": "Every configuration from single to four burner is available for PNG lines. Confirm which models have a PNG variant."
+ },
+ "items": [
+  {
+   "id": "gas-1-steel-champ-vx2-steel",
+   "name": "Champ VX2 (Steel)",
+   "code": "SB-101",
+   "cat": "gas",
+   "burners": 1,
+   "top": "steel",
+   "specs": [
+    "Body approx 450 g"
+   ]
+  },
+  {
+   "id": "gas-1-steel-champ-vx2-sheet",
+   "name": "Champ VX2 (Sheet)",
+   "code": "SB-111",
+   "cat": "gas",
+   "burners": 1,
+   "top": "steel",
+   "specs": [
+    "Body approx 450 g"
+   ]
+  },
+  {
+   "id": "gas-1-steel-royal",
+   "name": "Royal",
+   "code": "SB-105",
+   "cat": "gas",
+   "burners": 1,
+   "top": "steel",
+   "specs": [
+    "Body approx 850 g"
+   ]
+  },
+  {
+   "id": "gas-1-steel-swift",
+   "name": "Swift",
+   "code": "SB-103",
+   "cat": "gas",
+   "burners": 1,
+   "top": "steel",
+   "specs": [
+    "Blank approx 850 g"
+   ]
+  },
+  {
+   "id": "gas-1-steel-sb-mini-opal-18g",
+   "name": "SB Mini Opal (18G)",
+   "code": "SB6",
+   "cat": "gas",
+   "burners": 1,
+   "top": "steel",
+   "specs": [
+    "18-gauge steel",
+    "Blank approx 1.1 kg",
+    "Argon welded, jointless"
+   ]
+  },
+  {
+   "id": "gas-1-steel-sb-bfly-opal-18g",
+   "name": "SB BFly Opal (18G)",
+   "code": null,
+   "cat": "gas",
+   "burners": 1,
+   "top": "steel",
+   "specs": [
+    "18-gauge steel",
+    "Blank approx 1.7 kg",
+    "Argon welded, jointless",
+    "400 g sheet pan support"
+   ]
+  },
+  {
+   "id": "gas-1-steel-sb-109-champ",
+   "name": "SB-109 Champ",
+   "code": "SB8",
+   "cat": "gas",
+   "burners": 1,
+   "top": "steel",
+   "specs": [
+    "Body approx 450 g"
+   ]
+  },
+  {
+   "id": "gas-1-steel-sb-bfly-platinum",
+   "name": "SB BFly Platinum",
+   "code": null,
+   "cat": "gas",
+   "burners": 1,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.2 kg",
+    "400 g sheet pan support"
+   ]
+  },
+  {
+   "id": "gas-1-glass-sb-glass-top",
+   "name": "SB Glass Top",
+   "code": null,
+   "cat": "gas",
+   "burners": 1,
+   "top": "glass",
+   "specs": [
+    "Also in digital glass"
+   ]
+  },
+  {
+   "id": "gas-2-steel-mini-deluxe-with-panel",
+   "name": "Mini Deluxe (with panel)",
+   "code": "DB-154",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 750 g"
+   ]
+  },
+  {
+   "id": "gas-2-steel-supreme-bf-deluxe",
+   "name": "Supreme BF Deluxe",
+   "code": "DB-158",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.15 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-mini-popular-with-panel",
+   "name": "Mini Popular (with panel)",
+   "code": "DB-201",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 900 g"
+   ]
+  },
+  {
+   "id": "gas-2-steel-commander-with-panel",
+   "name": "Commander (with panel)",
+   "code": "DB-240",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 850 g"
+   ]
+  },
+  {
+   "id": "gas-2-steel-supreme",
+   "name": "Supreme",
+   "code": "DB-207",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.5 kg",
+    "Also with panel"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/05/DB-207.png"
+  },
+  {
+   "id": "gas-2-steel-pearl",
+   "name": "Pearl",
+   "code": "DB-210",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.5 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-a-one",
+   "name": "A-One",
+   "code": "DB-213",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.5 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-ruby",
+   "name": "Ruby",
+   "code": "DB-216",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.5 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-liza",
+   "name": "Liza",
+   "code": "DB-219",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.8 kg with channel and panel",
+    "Also in 1.5 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-chancellor",
+   "name": "Chancellor",
+   "code": "DB-225",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.5 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-uttam",
+   "name": "Uttam",
+   "code": "DB-234",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.2 kg",
+    "Butterfly body, no drip tray"
+   ]
+  },
+  {
+   "id": "gas-2-steel-flame",
+   "name": "Flame",
+   "code": "DB-237",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.3 kg",
+    "Commander body with drip tray"
+   ]
+  },
+  {
+   "id": "gas-2-steel-diamond-20g",
+   "name": "Diamond (20G)",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "20-gauge steel",
+    "Blank approx 2.5 kg",
+    "Argon welded, jointless"
+   ]
+  },
+  {
+   "id": "gas-2-steel-18-gauge-mini-sheet-ps",
+   "name": "18 Gauge Mini (Sheet PS)",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.6 kg",
+    "Argon welded, jointless"
+   ]
+  },
+  {
+   "id": "gas-2-steel-18-gauge-mini-vx-2",
+   "name": "18 Gauge Mini (VX-2)",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.6 kg",
+    "Argon welded, jointless"
+   ]
+  },
+  {
+   "id": "gas-2-steel-bf-matchless",
+   "name": "BF Matchless",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.9 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-taj-2",
+   "name": "Taj 2",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Body approx 450 g"
+   ]
+  },
+  {
+   "id": "gas-2-steel-venue",
+   "name": "Venue",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "No channel or panel",
+    "Round sheet pan support 280 g",
+    "Blank approx 1.9 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-black-beauty-vx2",
+   "name": "Black Beauty VX2",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Black powder-coated steel body",
+    "Blank approx 1.5 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-crysta-2",
+   "name": "Crysta 2",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Body approx 5.5 kg",
+    "Brass revolving nozzle",
+    "Argon welded, jointless",
+    "Heavy square pan support, Euro coating"
+   ]
+  },
+  {
+   "id": "gas-2-steel-cute",
+   "name": "Cute",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Also in digital glass"
+   ]
+  },
+  {
+   "id": "gas-2-steel-elegant",
+   "name": "Elegant",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 2.2 kg with channel and panel"
+   ],
+   "note": "Model code shared with another model on the old site. Confirm."
+  },
+  {
+   "id": "gas-2-steel-popular-with-panel",
+   "name": "Popular (with panel)",
+   "code": "DB-204",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-sonet",
+   "name": "Sonet",
+   "code": "DB-242",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.15 kg",
+    "Butterfly body, no drip tray"
+   ]
+  },
+  {
+   "id": "gas-2-steel-k-10",
+   "name": "K-10",
+   "code": "DB-244",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.15 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-k-20",
+   "name": "K-20",
+   "code": "DB-246",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.35 kg with channel and panel"
+   ]
+  },
+  {
+   "id": "gas-2-steel-nova",
+   "name": "Nova",
+   "code": "DB-2002",
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.8 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-platinum",
+   "name": "Platinum",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 2.1 kg",
+    "Pan support 400 g each"
+   ],
+   "note": "Model code shared with another model on the old site. Confirm."
+  },
+  {
+   "id": "gas-2-steel-duplex-2",
+   "name": "Duplex 2",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": []
+  },
+  {
+   "id": "gas-2-steel-fortuner",
+   "name": "Fortuner",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.9 kg",
+    "Casting pan support 700 g each",
+    "Top pan support 500 g",
+    "Cast-iron mixing tube 700 g"
+   ]
+  },
+  {
+   "id": "gas-2-steel-gem-vx-2",
+   "name": "Gem VX-2",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": []
+  },
+  {
+   "id": "gas-2-steel-innova",
+   "name": "Innova",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.5 kg",
+    "Casting pan support 500 g each",
+    "Top pan support 300 g"
+   ]
+  },
+  {
+   "id": "gas-2-steel-majestic-2-burner-ss",
+   "name": "Majestic 2 Burner (SS)",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": []
+  },
+  {
+   "id": "gas-2-steel-opal-18g",
+   "name": "Opal (18G)",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "18-gauge steel",
+    "Blank approx 3.2 kg",
+    "Argon welded, jointless",
+    "Pan support 400 g each"
+   ]
+  },
+  {
+   "id": "gas-2-steel-seltos",
+   "name": "Seltos",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "No channel or panel",
+    "Round steel pan support",
+    "Blank approx 1.9 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-slim-2-35-mm",
+   "name": "Slim 2 (35 mm)",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Body approx 1.5 kg",
+    "Revolving nozzle",
+    "Argon welded, jointless",
+    "Heavy square pan support, Euro coating"
+   ]
+  },
+  {
+   "id": "gas-2-steel-max-heavy",
+   "name": "Max Heavy",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 2 kg, jointless"
+   ]
+  },
+  {
+   "id": "gas-2-steel-max-matchless",
+   "name": "Max Matchless",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Blank approx 1.9 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-mini-anupam",
+   "name": "Mini Anupam",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": [
+    "Medium height",
+    "Blank approx 1.2 kg"
+   ]
+  },
+  {
+   "id": "gas-2-steel-spectra-2",
+   "name": "Spectra 2",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "steel",
+   "specs": []
+  },
+  {
+   "id": "gas-2-glass-direct-glass-2",
+   "name": "Direct Glass 2",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "glass",
+   "specs": [
+    "Glass cooktop"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/DIRECT-GLASS-2.png"
+  },
+  {
+   "id": "gas-2-glass-direct-nano-2",
+   "name": "Direct Nano 2",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "glass",
+   "specs": [
+    "Glass cooktop"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/DIRECT-NANO-2.png"
+  },
+  {
+   "id": "gas-2-glass-glass-two-black",
+   "name": "Glass Two Black",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "glass",
+   "specs": [
+    "Also in mirror and digital design"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/GLASS-TWO-BLACK.png"
+  },
+  {
+   "id": "gas-2-glass-lotus-2",
+   "name": "Lotus 2",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "glass",
+   "specs": [
+    "New Lotus 650 GSM pan support, Euro coating",
+    "Also in SS frame",
+    "ODID burner and mixing tube",
+    "Heavy knobs"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/LOTUS-2.png"
+  },
+  {
+   "id": "gas-2-glass-nano-black",
+   "name": "Nano Black",
+   "code": null,
+   "cat": "gas",
+   "burners": 2,
+   "top": "glass",
+   "specs": [
+    "Also in digital design"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/NANO-BLACK.png"
+  },
+  {
+   "id": "gas-3-steel-creta",
+   "name": "Creta",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Direct mixing tube",
+    "No pigtail"
+   ]
+  },
+  {
+   "id": "gas-3-steel-crown-3-duplex",
+   "name": "Crown 3 Duplex",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Black alloy burner",
+    "Heavy Lotus pan support",
+    "Also with brass top"
+   ]
+  },
+  {
+   "id": "gas-3-steel-crown-3-spectra",
+   "name": "Crown 3 Spectra",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Black alloy burner",
+    "Heavy Lotus pan support",
+    "Also with brass top"
+   ]
+  },
+  {
+   "id": "gas-3-steel-crysta-3",
+   "name": "Crysta 3",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Body approx 6.5 kg",
+    "Brass revolving nozzle",
+    "Euro coating",
+    "Argon welded, jointless",
+    "Heavy square pan support"
+   ]
+  },
+  {
+   "id": "gas-3-steel-curvy",
+   "name": "Curvy",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "New curvy design",
+    "Also with black alloy burner, black SS O-ring, stylish knobs"
+   ]
+  },
+  {
+   "id": "gas-3-steel-duplex-3-mirror-ps",
+   "name": "Duplex 3 (Mirror PS)",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Black alloy burner",
+    "Heavy 6-prong pan support",
+    "Also with brass top"
+   ]
+  },
+  {
+   "id": "gas-3-steel-duplex-3-long-ps",
+   "name": "Duplex 3 Long PS",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/DUPLEX-3-LONG-PS-2.png"
+  },
+  {
+   "id": "gas-3-steel-duplex-3-round",
+   "name": "Duplex 3 Round",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Mirror-finish SS body",
+    "Smooth knobs",
+    "Heavy powder-coated pan support",
+    "Tri-pin jumbo burner"
+   ]
+  },
+  {
+   "id": "gas-3-steel-maharaja-18g",
+   "name": "Maharaja (18G)",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Body approx 2.7 kg",
+    "6-leg round sheet pan support"
+   ]
+  },
+  {
+   "id": "gas-3-steel-majestic-3-burner-ss",
+   "name": "Majestic 3 Burner (SS)",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Body approx 6.5 kg"
+   ]
+  },
+  {
+   "id": "gas-3-steel-matchless-3-burner",
+   "name": "Matchless 3 Burner",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Body approx 2.65 kg",
+    "Drip tray with attached O-ring",
+    "ODID burner and mixing tube"
+   ]
+  },
+  {
+   "id": "gas-3-steel-presto-3-burner",
+   "name": "Presto 3 Burner",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Body approx 5.5 kg",
+    "Pan support 500 g each"
+   ]
+  },
+  {
+   "id": "gas-3-steel-smarty-3",
+   "name": "Smarty 3",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Blank approx 2.8 kg"
+   ]
+  },
+  {
+   "id": "gas-3-steel-spectra-3-c-model",
+   "name": "Spectra 3 (C-Model)",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": []
+  },
+  {
+   "id": "gas-3-steel-spectra-3-mirror-ps",
+   "name": "Spectra 3 (Mirror PS)",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Black alloy burner",
+    "Heavy 6-prong pan support",
+    "Also with brass top"
+   ]
+  },
+  {
+   "id": "gas-3-steel-spectra-3-plain",
+   "name": "Spectra 3 (Plain)",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": []
+  },
+  {
+   "id": "gas-3-steel-spectrum",
+   "name": "Spectrum",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Drip tray with attached O-ring",
+    "New stylish pan support"
+   ]
+  },
+  {
+   "id": "gas-3-steel-starline",
+   "name": "Starline",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Heavy casting pan support 750 g each"
+   ]
+  },
+  {
+   "id": "gas-3-steel-taj-3",
+   "name": "Taj 3",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Body approx 6.5 kg",
+    "Brass revolving nozzle",
+    "Argon welded, jointless",
+    "Heavy square pan support, Euro coating",
+    "Metal knobs"
+   ]
+  },
+  {
+   "id": "gas-3-steel-trendy",
+   "name": "Trendy",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Blank approx 2.3 kg",
+    "Argon welded, jointless"
+   ]
+  },
+  {
+   "id": "gas-3-steel-trendy-light",
+   "name": "Trendy (Light)",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Blank approx 2 kg"
+   ]
+  },
+  {
+   "id": "gas-3-steel-trendy-royal",
+   "name": "Trendy Royal",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Blank approx 2.3 kg"
+   ]
+  },
+  {
+   "id": "gas-3-steel-trendy-slim-line-35-mm",
+   "name": "Trendy Slim Line (35 mm)",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Body approx 1.8 kg",
+    "Revolving nozzle",
+    "Argon welded, jointless",
+    "Heavy square pan support, Euro coating"
+   ]
+  },
+  {
+   "id": "gas-3-steel-trinity-3-br",
+   "name": "Trinity 3 BR",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Blank approx 2.8 kg",
+    "Argon welded, jointless",
+    "With pigtail"
+   ]
+  },
+  {
+   "id": "gas-3-steel-trendy-18-gauge",
+   "name": "Trendy 18 Gauge",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Blank approx 3.2 kg",
+    "Argon welded, jointless"
+   ]
+  },
+  {
+   "id": "gas-3-steel-trendy-max",
+   "name": "Trendy Max",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Blank approx 2.7 kg",
+    "Argon welded, jointless"
+   ]
+  },
+  {
+   "id": "gas-3-steel-trendy-power",
+   "name": "Trendy Power",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "steel",
+   "specs": [
+    "Blank approx 3.2 kg",
+    "Casting pan support 700 g each",
+    "Casting mixing tube"
+   ]
+  },
+  {
+   "id": "gas-3-glass-3-hob-cooktop",
+   "name": "3 Hob Cooktop",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "Hob cooktop"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/3-HOB-COOKTOP.png"
+  },
+  {
+   "id": "gas-3-glass-40-mm-side-knob",
+   "name": "40 mm Side Knob",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "Also with flame-guard pan support, metallic knob, forged burner",
+    "Colours: rose gold, gold, black"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/40-MMSIDE-KNOB.png"
+  },
+  {
+   "id": "gas-3-glass-direct-glass-3",
+   "name": "Direct Glass 3",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "Black powder-coated frame, also SS frame",
+    "Also in digital glass",
+    "Direct-fitting mixing tube, no pigtail"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/DIRECT-GLASS-3.png"
+  },
+  {
+   "id": "gas-3-glass-flame-guard",
+   "name": "Flame Guard",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "New heavy flame guard",
+    "Pan support 650 g+, Euro coating",
+    "Double drip tray",
+    "ODID burner and mixing tube"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/FLAME-GAURD.png"
+  },
+  {
+   "id": "gas-3-glass-elite-3-black",
+   "name": "Elite 3 Black",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "Also body with glass",
+    "Digital design"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/ELITE-3-BLACK.png"
+  },
+  {
+   "id": "gas-3-glass-glass-3-black-crystal-ps",
+   "name": "Glass 3 Black Crystal PS",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "Also digital design",
+    "Also turbo and spiral burner"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/GLASS-3-BLACK-CRYSTAL-P-S.png"
+  },
+  {
+   "id": "gas-3-glass-glass-3-flame-guard-ps",
+   "name": "Glass 3 Flame Guard PS",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "Also digital design",
+    "Heavy crystal pan support"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/GLASS-3-FLAME-GUARD-P-S-2.png"
+  },
+  {
+   "id": "gas-3-glass-glass-three-black",
+   "name": "Glass Three Black",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "Also heavy crystal pan support, metallic knob, alloy burner, digital design"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/GLASS-THREE-BLACK.png"
+  },
+  {
+   "id": "gas-3-glass-glass-three-mirror",
+   "name": "Glass Three Mirror",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "Also heavy crystal pan support, metallic knob, alloy burner"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/GLASS-THREE-MIRROR.png"
+  },
+  {
+   "id": "gas-3-glass-goldy-3-burner",
+   "name": "Goldy 3 Burner",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "New heavy turbo burners, 650 g set of 3",
+    "Double-shaded golden glass"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/GOLDY-3-BURNER.png"
+  },
+  {
+   "id": "gas-3-glass-hexa-3-burner",
+   "name": "Hexa 3 Burner",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "Hexa cooktop"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/HEXA-3-BURNER.png"
+  },
+  {
+   "id": "gas-3-glass-kohinoor-3-black-frost",
+   "name": "Kohinoor 3 Black Frost",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "New heavy pan support",
+    "Black powder-coated frame"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/KOHINOOR-3-BLACK-FROST.png"
+  },
+  {
+   "id": "gas-3-glass-lotus-3",
+   "name": "Lotus 3",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "New Lotus 650 GSM pan support, Euro coating",
+    "Also SS frame",
+    "ODID burner and mixing tube",
+    "Heavy knobs"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/LOTUS-3.png"
+  },
+  {
+   "id": "gas-3-glass-standy-3-burner",
+   "name": "Standy 3 Burner",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "Stand design for easy cleaning",
+    "Also in 2 and 4 burner"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/STANDY-3-BURNER.png"
+  },
+  {
+   "id": "gas-3-glass-marble-3-burner",
+   "name": "Marble 3 Burner",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "New Lotus pan support",
+    "Heavy turbo burners, 650 g set of 3",
+    "Metallic knob"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/MARBLE-3-BURNER.png"
+  },
+  {
+   "id": "gas-3-glass-smart-chef",
+   "name": "Smart Chef",
+   "code": null,
+   "cat": "gas",
+   "burners": 3,
+   "top": "glass",
+   "specs": [
+    "New 6-prong pan support",
+    "Heavy knobs",
+    "Side handles for easy grip"
+   ],
+   "img": "https://grey-skunk-471358.hostingersite.com/wp-content/uploads/2025/05/SMART-CHEF.png"
+  },
+  {
+   "id": "gas-4-steel-4-br-spectra-round",
+   "name": "4 BR Spectra Round",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "steel",
+   "specs": [
+    "Mirror-finish SS body",
+    "Smooth knobs",
+    "Heavy powder-coated pan support",
+    "Tri-pin burner"
+   ]
+  },
+  {
+   "id": "gas-4-steel-4-burner-duplex-ss",
+   "name": "4 Burner Duplex SS",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "steel",
+   "specs": [
+    "Heavy turbo burners, 650 g set",
+    "Double-shaded golden glass"
+   ]
+  },
+  {
+   "id": "gas-4-steel-crysta-4",
+   "name": "Crysta 4",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "steel",
+   "specs": [
+    "Body approx 8 kg",
+    "Brass revolving nozzle",
+    "Argon welded, jointless",
+    "Heavy square pan support",
+    "Euro coating"
+   ]
+  },
+  {
+   "id": "gas-4-steel-presto-4-burner",
+   "name": "Presto 4 Burner",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "steel",
+   "specs": [
+    "Heavy duplex body approx 7.5 kg",
+    "New flame guard",
+    "Pan support 500 g each",
+    "Also Legender and Turbo versions"
+   ]
+  },
+  {
+   "id": "gas-4-steel-trinity-4-burner",
+   "name": "Trinity 4 Burner",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "steel",
+   "specs": [
+    "Extra-long spacious body",
+    "Approx 3.5 kg",
+    "With pigtail"
+   ]
+  },
+  {
+   "id": "gas-4-steel-slim-4-35-mm",
+   "name": "Slim 4 (35 mm)",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "steel",
+   "specs": [
+    "Body approx 3.5 kg",
+    "Revolving nozzle",
+    "Argon welded, jointless",
+    "Heavy square pan support",
+    "Euro coating"
+   ]
+  },
+  {
+   "id": "gas-4-steel-taj-4",
+   "name": "Taj 4",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "steel",
+   "specs": [
+    "Body approx 8 kg",
+    "Brass revolving nozzle",
+    "Argon welded, jointless",
+    "Heavy square pan support, Euro coating",
+    "Metal knobs"
+   ]
+  },
+  {
+   "id": "gas-4-glass-4-br-duplex-glasstop",
+   "name": "4 BR Duplex Glasstop",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "glass",
+   "specs": [
+    "Spiral and turbo burner options",
+    "Heavy crystal pan support",
+    "Digital design",
+    "Metallic knob"
+   ]
+  },
+  {
+   "id": "gas-4-glass-4-hob-cooktop",
+   "name": "4 Hob Cooktop",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "glass",
+   "specs": [
+    "Stylish 4-hob"
+   ]
+  },
+  {
+   "id": "gas-4-glass-4-br-titanic",
+   "name": "4 BR Titanic",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "glass",
+   "specs": [
+    "Extra-long spacious body",
+    "Glass or normal glass pan support",
+    "Spiral and turbo burner options"
+   ]
+  },
+  {
+   "id": "gas-4-glass-hexa-4-burner",
+   "name": "Hexa 4 Burner",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "glass",
+   "specs": [
+    "Stylish hexa cooktop"
+   ]
+  },
+  {
+   "id": "gas-4-glass-4-burner-square-black",
+   "name": "4 Burner Square Black",
+   "code": null,
+   "cat": "gas",
+   "burners": 4,
+   "top": "glass",
+   "specs": [
+    "Heavy crystal pan support",
+    "Spiral and turbo burner",
+    "Digital design",
+    "Metallic knob"
+   ]
+  },
+  {
+   "id": "spares-bakelite-knobs",
+   "name": "Bakelite Knobs",
+   "code": null,
+   "cat": "spares",
+   "specs": [
+    "Bulk supply for dealers and technicians"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/05/A1.jpg"
+  },
+  {
+   "id": "spares-drip-tray",
+   "name": "Drip Tray",
+   "code": null,
+   "cat": "spares",
+   "specs": [
+    "Bulk supply for dealers and technicians"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/05/A2-1024x1024.jpg"
+  },
+  {
+   "id": "spares-brass-revolving-nozzle",
+   "name": "Brass Revolving Nozzle",
+   "code": null,
+   "cat": "spares",
+   "specs": [
+    "Bulk supply for dealers and technicians"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/05/A3.jpg"
+  },
+  {
+   "id": "spares-brass-burners",
+   "name": "Brass Burners",
+   "code": null,
+   "cat": "spares",
+   "specs": [
+    "Bulk supply for dealers and technicians"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/05/A4.jpg"
+  },
+  {
+   "id": "spares-sheet-pan-support",
+   "name": "Sheet Pan Support",
+   "code": null,
+   "cat": "spares",
+   "specs": [
+    "Bulk supply for dealers and technicians"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/05/A5.jpg"
+  },
+  {
+   "id": "spares-fancy-metal-knobs",
+   "name": "Fancy Metal Knobs",
+   "code": null,
+   "cat": "spares",
+   "specs": [
+    "Bulk supply for dealers and technicians"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/05/A6.jpg"
+  },
+  {
+   "id": "spares-amt-for-three-burner-with-jumbo",
+   "name": "AMT for Three Burner with Jumbo",
+   "code": null,
+   "cat": "spares",
+   "specs": [
+    "Bulk supply for dealers and technicians"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/05/A8-1024x682.jpg"
+  },
+  {
+   "id": "spares-ms-revolving-nozzle",
+   "name": "MS Revolving Nozzle",
+   "code": null,
+   "cat": "spares",
+   "specs": [
+    "Bulk supply for dealers and technicians"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/05/A9-1024x1024.jpg"
+  },
+  {
+   "id": "spares-valves-and-pipes-lpg-and-png",
+   "name": "Valves and Pipes (LPG and PNG)",
+   "code": null,
+   "cat": "spares",
+   "specs": [
+    "Brass, SS and heat-resistant polymer parts",
+    "Bulk pricing"
+   ]
+  },
+  {
+   "id": "appliance-air-fryer-digital",
+   "name": "Air Fryer Digital",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/air-fryer.png",
+   "gift": true
+  },
+  {
+   "id": "appliance-all-purpose-fan",
+   "name": "All Purpose Fan",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/all-purpose-fan.png"
+  },
+  {
+   "id": "appliance-ceiling-fan",
+   "name": "Ceiling Fan",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/ceiling-fan.png"
+  },
+  {
+   "id": "appliance-heavy-weight-dry-iron",
+   "name": "Heavy Weight Dry Iron",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/Dry-iron.png"
+  },
+  {
+   "id": "appliance-gas-water-heater",
+   "name": "Gas Water Heater",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/gas-water-heater.png"
+  },
+  {
+   "id": "appliance-halogen-heater",
+   "name": "Halogen Heater",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/halogen.png"
+  },
+  {
+   "id": "appliance-hand-mixer",
+   "name": "Hand Mixer",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/hand-mixer.png"
+  },
+  {
+   "id": "appliance-induction-cooker",
+   "name": "Induction Cooker",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/Induction.png"
+  },
+  {
+   "id": "appliance-light-weight-dry-iron",
+   "name": "Light Weight Dry Iron",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/Iron.png"
+  },
+  {
+   "id": "appliance-juicer-mixer-grinder",
+   "name": "Juicer Mixer Grinder",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/juicer.png"
+  },
+  {
+   "id": "appliance-jumbo-barbeque-griller",
+   "name": "Jumbo / Barbeque Griller",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/jumbo-griller.png"
+  },
+  {
+   "id": "appliance-electric-kettle",
+   "name": "Electric Kettle",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/kettle.png",
+   "gift": true
+  },
+  {
+   "id": "appliance-oven-toaster-griller",
+   "name": "Oven Toaster Griller",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/oven.png",
+   "gift": true
+  },
+  {
+   "id": "appliance-sandwich-griller",
+   "name": "Sandwich Griller",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/sandwich-griller.png",
+   "gift": true
+  },
+  {
+   "id": "appliance-steam-iron",
+   "name": "Steam Iron",
+   "code": null,
+   "cat": "appliance",
+   "specs": [
+    "Enquiry based"
+   ],
+   "img": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/Steam-iron.png"
+  }
+ ]
+}

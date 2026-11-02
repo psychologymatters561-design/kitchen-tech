@@ -1,0 +1,100 @@
+{
+  "_readme": "Single source of truth for business + product facts. null = not supplied yet (the site shows a visible 'to confirm' chip instead of inventing a value). Server env vars override product.price / product.mrp / tracking ids. Never put secrets here: this file is public.",
+
+  "brand": {
+    "name": "Kitchen Tech India",
+    "short": "Kitchen Tech",
+    "domain": "kitchentechindia.com",
+    "phoneDisplay": "+91 88822 66677",
+    "phoneE164": "+918882266677",
+    "whatsapp": "918882266677",
+    "email": "kitchentechindia.solutions@gmail.com",
+    "address": {
+      "line1": "Plot No. E39, DSIIDC Industrial Area",
+      "line2": "Sector 3, Bawana",
+      "city": "Delhi",
+      "pin": "110039",
+      "country": "IN"
+    },
+    "social": {
+      "facebook": "https://www.facebook.com/profile.php?id=61571344050283",
+      "instagram": "https://www.instagram.com/kitchentech_india/"
+    },
+    "years": "40+",
+    "yearsConfirmed": false,
+    "foundingYear": null,
+    "legalName": null,
+    "gstin": null,
+    "grievanceOfficer": null,
+    "isiLicence": null,
+    "hours": null,
+    "catalogueUrl": "https://kitchentechindia.com/wp-content/uploads/2025/05/CATALOUGE-25-26_new.pdf",
+    "vision": "Become India's most trusted and innovative kitchen appliance brand.",
+    "mission": "100% customer satisfaction, through top-tier products backed by real service."
+  },
+
+  "product": {
+    "slug": "aanch",
+    "name": "Aanch",
+    "devanagari": "आँच",
+    "fullName": "Aanch Infrared Cooktop",
+    "tagline": "Aanch wahi. Gas nahi.",
+    "model": null,
+    "wattage": null,
+    "wattageForMaths": 2000,
+    "price": null,
+    "mrp": null,
+    "warranty": null,
+    "bisLicence": null,
+    "controls": null,
+    "safety": null,
+    "glass": null,
+    "inBox": null,
+    "dimensions": null,
+    "weight": null,
+    "socket": null,
+    "variants": null,
+    "cod": true,
+    "freeDelivery": null,
+    "deliveryDays": null,
+    "prepaidDiscount": 0,
+    "maxQtyPerOrder": 9,
+    "images": {
+      "primary": "https://www.kitchentechindia.com/wp-content/uploads/2025/02/infrared-cooker.png",
+      "secondary": "https://www.kitchentechindia.com/wp-content/uploads/2025/05/A7.jpg"
+    }
+  },
+
+  "market": {
+    "infraredPriceRange": [1400, 5000],
+    "inductionPriceRange": [2000, 4000],
+    "asOf": "2026 online listings"
+  },
+
+  "energy": {
+    "lpgDomestic": { "price": 942, "kg": 14.2, "asOf": "Delhi, from 7 Jun 2026" },
+    "lpgCommercial": { "price": 2930, "kg": 19, "asOf": "Delhi, from 1 Jul 2026" },
+    "tariffDefault": 7,
+    "daysPerCylinderDefault": 40
+  },
+
+  "india": {
+    "importShare": 0.6,
+    "importShareLabel": "about 6 in every 10 kg",
+    "consumptionFY26Mt": 33.2,
+    "productionFY26Mt": 13.1,
+    "bookingGapUrbanDays": 25,
+    "bookingGapRuralDays": 45,
+    "bookingGapAsOf": "March 2026",
+    "sources": [
+      { "label": "PPAC data via NiftyTrader: Jan to Jun 2026 consumption down 8%, about 60% of demand met by imports", "url": "https://www.niftytrader.in/markets/?p=28425" },
+      { "label": "S&P Global, Mar 2026: India seeks alternative LPG supplies; 25-day urban / 45-day rural booking gap", "url": "https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/031926-factbox-india-seeks-alternative-lpg-supplies-as-strait-of-hormuz-risks-persist" },
+      { "label": "Drewry: India faces LPG supply crunch, no strategic LPG reserves", "url": "https://www.drewry.co.uk/maritime-research-opinion-browser/caught-in-crossfire-india-faces-lpg-supply-crunch" },
+      { "label": "India Sea Trade News, 26 Oct 2026: Hormuz disruptions push India to tap Iranian LPG", "url": "https://indiaseatradenews.com/hormuz-disruptions-push-india-to-tap-iranian-lpg-after-years/" },
+      { "label": "Newsonair: domestic LPG up Rs 29 to Rs 942 (Delhi), Jun 2026", "url": "https://newsonair.gov.in/lpg-cooking-gas-price-increased-by-%e2%82%b929-per-14-2-kg-cylinder/" }
+    ]
+  },
+
+  "tracking": { "metaPixelId": null, "ga4Id": null },
+  "payments": { "razorpayKeyId": null }
+}

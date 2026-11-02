@@ -1,0 +1,37 @@
+{
+  "name": "kitchen-tech-india",
+  "version": "1.0.0",
+  "description": "Kitchen Tech India website: Aanch infrared cooktop D2C + gas stove B2B. Express API, SQLite, no-build GSAP frontend.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning server/index.js",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.js",
+    "vendor": "node scripts/vendor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psychologymatters561-design/kitchen-tech.git"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/psychologymatters561-design/kitchen-tech/issues"
+  },
+  "homepage": "https://github.com/psychologymatters561-design/kitchen-tech#readme",
+  "dependencies": {
+    "compression": "^1.8.2",
+    "express": "^4.22.3"
+  },
+  "devDependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/mukta": "^5.3.0",
+    "@fontsource/rozha-one": "^5.3.0",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.27"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  }
+}
