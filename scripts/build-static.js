@@ -26,7 +26,7 @@ const files = [
   join(dist, 'assets/data/site.json'),
   join(dist, 'assets/data/catalogue.json'),
 ];
-const IMG = /https:\/\/(?:www\.)?(?:kitchentechindia\.com|grey-skunk-471358\.hostingersite\.com)\/wp-content\/uploads\/[^"'\s)]+?\.(?:png|jpe?g|webp)/gi;
+const IMG = /https:\/\/(?:(?:www\.)?(?:kitchentechindia\.com|grey-skunk-471358\.hostingersite\.com)\/wp-content\/uploads\/|d2ol7oe51mr4n9\.cloudfront\.net\/user_[A-Za-z0-9]+\/)[^"'\s)]+?\.(?:png|jpe?g|webp|mp4)/gi;
 const urls = new Set();
 for (const f of files) for (const m of readFileSync(f, 'utf8').matchAll(IMG)) urls.add(m[0]);
 
@@ -40,8 +40,16 @@ await Promise.all(
       const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (KitchenTech site build)' }, signal: AbortSignal.timeout(20000) });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const buf = Buffer.from(await res.arrayBuffer());
+      if (/\.mp4$/i.test(url)) {
+        const vname = url.split('/').pop().toLowerCase();
+        writeFileSync(join(outDir, vname), buf); // the film is already encoded for scrubbing; ship it as-is
+        local.set(url, 'assets/img/site/' + vname);
+        ok++;
+        return;
+      }
       const name = url.split('/').pop().replace(/\.(png|jpe?g|webp)$/i, '').toLowerCase().replace(/[^a-z0-9-]+/g, '-') + '-' + createHash('sha1').update(url).digest('hex').slice(0, 6) + '.webp';
-      await sharp(buf).rotate().resize({ width: 1200, height: 1200, fit: 'inside', withoutEnlargement: true }).webp({ quality: 80, effort: 5 }).toFile(join(outDir, name));
+      const max = url.includes('cloudfront.net') ? 1920 : 1200; // film stills fill the screen
+      await sharp(buf).rotate().resize({ width: max, height: max, fit: 'inside', withoutEnlargement: true }).webp({ quality: 80, effort: 5 }).toFile(join(outDir, name));
       local.set(url, 'assets/img/site/' + name);
       ok++;
     } catch (e) {
@@ -49,7 +57,7 @@ await Promise.all(
     }
   })
 );
-console.log(`Photos: ${ok} of ${urls.size} downloaded and converted to WebP.`);
+console.log(`Media: ${ok} of ${urls.size} downloaded (photos converted to WebP, film copied).`);
 
 for (const f of files) {
   let s = readFileSync(f, 'utf8');

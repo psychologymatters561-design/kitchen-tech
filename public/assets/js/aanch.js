@@ -435,3 +435,10 @@ buy();
 tilt();
 demoForm();
 if (hasG) ScrollTrigger.refresh();
+
+/* world stills from the film drift against the scroll for depth */
+if (hasG) {
+  document.querySelectorAll('.world-img img').forEach((img) => {
+    gsap.fromTo(img, { yPercent: -8 }, { yPercent: 0, ease: 'none', scrollTrigger: { trigger: img.parentElement, start: 'top bottom', end: 'bottom top', scrub: true } });
+  });
+}

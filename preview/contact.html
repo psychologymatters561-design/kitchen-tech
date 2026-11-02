@@ -387,6 +387,13 @@ main, header, footer { position: relative; z-index: 1; }
 .list-check li::before { content: ''; position: absolute; left: 0; top: .32em; width: 18px; height: 18px; border-radius: 50%; background: var(--leaf) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 10.5l3.2 3L15 7'/%3E%3C/svg%3E") center/12px no-repeat; }
 .list-cross li::before { background: var(--chilli) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M6.5 6.5l7 7M13.5 6.5l-7 7'/%3E%3C/svg%3E") center/11px no-repeat; }
 
+/* ---- world stills: parallax depth layers ---- */
+.world-img { position: relative; overflow: hidden; border-radius: var(--radius); background: var(--tawa-2); }
+.world-img img { width: 100%; height: 118%; object-fit: cover; display: block; will-change: transform; }
+.world-cap { position: absolute; right: 12px; bottom: 10px; font-family: var(--font-mono); font-size: .6rem; letter-spacing: .08em; color: rgba(244, 237, 226, .6); }
+.steam { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(40% 30% at 50% 100%, rgba(255, 255, 255, .08), transparent 70%); mix-blend-mode: screen; animation: steam 9s ease-in-out infinite alternate; }
+@keyframes steam { from { transform: translateY(6%); opacity: .4; } to { transform: translateY(-6%); opacity: .9; } }
+
 </style>
 <style>
 /* Home, catalogue, business, about, contact, checkout, policies. */
@@ -502,6 +509,67 @@ main, header, footer { position: relative; z-index: 1; }
   .h-hero .h1 { font-size: clamp(2.4rem, 10vw, 3.4rem); }
   .h-hero .lead { margin: 16px 0 22px; }
 }
+
+/* ================= "Ek Rasoi" scroll film ================= */
+.film { position: relative; background: var(--tawa); color: var(--atta); }
+.film-stage { position: relative; height: 100svh; min-height: 560px; overflow: hidden; isolation: isolate; }
+.film-poster, .film-still, .film-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.film-video { opacity: 0; transition: opacity 1s var(--ease-out); }
+.film.is-ready .film-video { opacity: 1; }
+.film-still { display: none; }
+.film.is-static .film-still { display: block; animation: still-drift 22s var(--ease-in-out) infinite alternate; }
+.film.is-static .film-poster, .film.is-static .film-video, .film.is-static .film-loader, .film.is-static .film-cue { display: none; }
+@keyframes still-drift { from { transform: scale(1.04) translate3d(0, 0, 0); } to { transform: scale(1.1) translate3d(-1.5%, -1%, 0); } }
+@media (prefers-reduced-motion: reduce) { .film.is-static .film-still { animation: none; } }
+.film-scrim { position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  background:
+    radial-gradient(70% 60% at 12% 18%, rgba(14, 10, 8, .72), transparent 70%),
+    radial-gradient(60% 55% at 88% 16%, rgba(14, 10, 8, calc(.62 * var(--trs, 0))), transparent 70%),
+    linear-gradient(180deg, rgba(14, 10, 8, .55) 0%, transparent 22%, transparent 70%, rgba(20, 16, 13, .95) 100%); }
+.film { --trs: clamp(0, (var(--p, 0) - .33) * 6, 1); }
+.film-caps { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+.film-cap, .film-settle { position: absolute; top: calc(var(--header-h) + clamp(16px, 5vh, 64px)); max-width: min(46rem, 88vw); display: grid; gap: 10px; }
+.pos-tl { left: var(--gutter); }
+.pos-tr { right: var(--gutter); text-align: right; justify-items: end; }
+.film-cap > *, .film-settle { margin: 0; opacity: 0; visibility: hidden; will-change: opacity, transform; }
+.film-settle { pointer-events: auto; }
+.cap-time { color: var(--glow); letter-spacing: .2em; font-size: .85rem; }
+.cap-line { font-size: clamp(1.1rem, 1.7vw, 1.45rem); color: var(--atta); text-shadow: 0 2px 18px rgba(0, 0, 0, .7); max-width: 26ch; }
+.cap-big { font-size: clamp(3rem, 7.4vw, 7rem); line-height: .95; text-shadow: 0 4px 40px rgba(0, 0, 0, .6); }
+.settle-h { font-size: clamp(2.4rem, 5.2vw, 4.8rem); line-height: .98; max-width: 14ch; text-shadow: 0 4px 40px rgba(0, 0, 0, .55); }
+.settle-sub { font-size: var(--fs-lead); color: var(--atta-3); max-width: 34ch; margin: 4px 0 0; }
+.settle-price { font-size: 1.15rem; margin: 2px 0 6px; }
+.settle-price .price { font-family: var(--font-display); font-weight: 400; font-size: 2rem; color: var(--glow); }
+.film.is-static .film-cap { display: none; }
+.film.is-static .film-settle { opacity: 1; visibility: visible; }
+.film-loader { position: absolute; left: 50%; bottom: clamp(70px, 12vh, 120px); transform: translateX(-50%); z-index: 3; display: flex; align-items: center; gap: 12px; padding: 10px 18px 10px 12px; border-radius: 999px; background: rgba(20, 16, 13, .6); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); font-size: .9rem; color: var(--atta-3); transition: opacity .6s; }
+.film-loader svg { width: 34px; height: 34px; transform: rotate(-90deg); }
+.film-loader .ring-bg { fill: none; stroke: rgba(244, 237, 226, .15); stroke-width: 3; }
+.film-loader .ring-fg { fill: none; stroke: var(--ember-hot); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset .3s; }
+.film-loader .ring-in { fill: none; stroke: var(--brass); stroke-width: 1.5; opacity: .6; }
+.film-loader b { color: var(--atta); font-weight: 700; font-variant-numeric: tabular-nums; }
+.film.is-ready .film-loader { opacity: 0; pointer-events: none; }
+.film:not(.is-film):not(.is-static) .film-loader { display: none; }
+.film-cue { position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); z-index: 3; font-family: var(--font-mono); font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--atta-3); display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.film-cue i { width: 1px; height: 34px; background: linear-gradient(var(--ember-hot), transparent); animation: cue 1.8s var(--ease-in-out) infinite; transform-origin: top; }
+@keyframes cue { 0% { transform: scaleY(0); } 50% { transform: scaleY(1); } 100% { transform: scaleY(1); opacity: 0; } }
+.film-note { position: absolute; right: var(--gutter); bottom: 14px; z-index: 3; margin: 0; font-family: var(--font-mono); font-size: .62rem; letter-spacing: .08em; color: rgba(244, 237, 226, .55); }
+@media (max-width: 860px) {
+  .film.is-static .film-stage { min-height: 100svh; }
+  .film.is-static .film-still { object-position: 72% 50%; }
+  .film-scrim { background: linear-gradient(180deg, rgba(14, 10, 8, .88) 0%, rgba(14, 10, 8, .55) 42%, transparent 62%, rgba(20, 16, 13, .9) 100%); }
+  .film-settle { right: var(--gutter); }
+  .settle-h { font-size: clamp(2.2rem, 10vw, 3.2rem); }
+  .film-note { left: var(--gutter); right: auto; }
+}
+
+.teaser-bg { position: absolute !important; inset: 0; border-radius: 0; z-index: 0; opacity: .55; }
+.teaser-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--tawa) 0%, rgba(20, 16, 13, .86) 45%, rgba(20, 16, 13, .25) 100%); }
+.teaser > :not(.teaser-bg) { position: relative; z-index: 1; }
+.final-world { position: relative; }
+.final-bg { position: absolute !important; inset: 0; border-radius: 0; z-index: 0; opacity: .38; }
+.final-bg::after { content: ''; position: absolute; inset: 0; background: radial-gradient(70% 70% at 50% 50%, rgba(20, 16, 13, .35), var(--tawa) 85%); }
+.final-world > .wrap { position: relative; z-index: 1; }
 
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Kitchen Tech India","telephone":"+918882266677","email":"kitchentechindia.solutions@gmail.com","url":"https://kitchentechindia.com/","address":{"@type":"PostalAddress","streetAddress":"Plot No. E39, DSIIDC Industrial Area, Sector 3, Bawana","addressLocality":"Delhi","postalCode":"110039","addressCountry":"IN"}}</script>
