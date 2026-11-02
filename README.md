@@ -26,6 +26,10 @@ server/
 tests/                    node:test suites (API + cost engine)
 ```
 
+## See it without installing anything
+
+`preview/` has every page as **one self-contained file** (styles, fonts, animations and data inside). Download the folder and double-click `preview/aanch.html` or `preview/index.html`. It works offline and on a phone. Forms in the preview send your details to WhatsApp, because there is no server behind a single file. Rebuild after any change with `npm run preview`.
+
 ## Run it
 
 Requires **Node 22.13+**.

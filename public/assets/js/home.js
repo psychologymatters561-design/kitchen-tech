@@ -1,4 +1,4 @@
-import { boot, KT } from './core.js';
+import { boot, KT, loadCatalogue } from './core.js';
 import { monthlyCost } from './lib/cost-engine.js';
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -22,8 +22,7 @@ flames.innerHTML = Array.from({ length: N }, (_, i) => {
 const r = monthlyCost({ cylinderPrice: site.energy.lpgDomestic.price, daysPerCylinder: site.energy.daysPerCylinderDefault, shareOnAanch: 0.5 });
 $('#t-days').textContent = Math.round(r.cylinderLastsDays);
 $('#t-base').textContent = site.energy.daysPerCylinderDefault;
-fetch('assets/data/catalogue.json')
-  .then((x) => x.json())
+loadCatalogue()
   .then((c) => {
     const n = c.items.filter((i) => i.cat === 'gas').length;
     $('#model-count').textContent = n + '';

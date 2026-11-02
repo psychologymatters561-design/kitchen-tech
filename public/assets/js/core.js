@@ -40,6 +40,15 @@ export const ico = {
 const LOGO = `<svg viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" fill="#14100d" stroke="rgba(244,237,226,.18)"/><circle cx="20" cy="20" r="12" fill="none" stroke="#e8461f" stroke-width="2"/><circle cx="20" cy="20" r="7.5" fill="none" stroke="#ff7a2e" stroke-width="2"/><circle cx="20" cy="20" r="3" fill="#ffb25e"/></svg>`;
 
 /* ------------------------------------------------------------------ config */
+/** Catalogue from the API, then the static file, or the copy embedded in a preview build. */
+export async function loadCatalogue() {
+  if (window.__KT_DATA__?.catalogue) return window.__KT_DATA__.catalogue;
+  try {
+    return await getJSON('api/catalogue');
+  } catch {
+    return getJSON('assets/data/catalogue.json');
+  }
+}
 async function getJSON(url) {
   const r = await fetch(url, { headers: { Accept: 'application/json' } });
   if (!r.ok) throw new Error(r.status);
@@ -47,6 +56,13 @@ async function getJSON(url) {
 }
 export async function loadSite() {
   if (KT.site) return KT.site;
+  const embedded = window.__KT_DATA__?.site; // single-file preview build carries its data inline
+  if (embedded) {
+    KT.site = structuredClone(embedded);
+    KT.site.product.orderable = Number.isFinite(KT.site.product.price) && KT.site.product.price > 0;
+    KT.site.payments = { ...(KT.site.payments || {}), online: false };
+    return KT.site;
+  }
   try {
     KT.site = await getJSON('api/config');
     KT.server = true;

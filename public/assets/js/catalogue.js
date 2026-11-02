@@ -1,16 +1,11 @@
-import { boot, KT, esc, ico, waLink, initImgFallback } from './core.js';
+import { boot, KT, esc, ico, waLink, initImgFallback, loadCatalogue } from './core.js';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 await boot();
 const hasG = typeof window.gsap !== 'undefined' && !KT.reduce;
 
-let items = [];
-try {
-  items = (await (await fetch('api/catalogue')).json()).items;
-} catch {
-  items = (await (await fetch('assets/data/catalogue.json')).json()).items;
-}
+const items = (await loadCatalogue()).items;
 
 const FILTERS = {
   all: () => true,
