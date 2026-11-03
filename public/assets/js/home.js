@@ -11,7 +11,9 @@ const f = $('#film');
 const testFilm = (new URLSearchParams(location.search).get('film') || '').replace(/^.*:.*$/, ''); // ?film=local/path stands in for testing (relative paths only)
 initFilm({
   film: f ? { full: testFilm || f.dataset.full, light: testFilm || f.dataset.light, bytes: testFilm ? 0 : +f.dataset.bytes || 0, seconds: +f.dataset.seconds || 17.46 } : null,
+  story: f ? { portrait: (f.dataset.storyPortrait || '').split(',').filter(Boolean), landscape: (f.dataset.storyLandscape || '').split(',').filter(Boolean) } : null,
   scrollScreens: 5,
+  storyScreens: 3.4,
 });
 
 /* numbers that come from data, not from guesses */

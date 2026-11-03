@@ -9,6 +9,8 @@ const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const isTouch = matchMedia('(hover: none)').matches;
 const hasGsap = typeof window.gsap !== 'undefined';
 if (hasGsap) gsap.registerPlugin(...[window.ScrollTrigger, window.SplitText, window.DrawSVGPlugin].filter(Boolean));
+// phones: the address bar showing/hiding must not re-measure every pinned section (stops jumps)
+if (hasGsap && window.ScrollTrigger) ScrollTrigger.config({ ignoreMobileResize: true });
 
 export const KT = (window.KT = { reduce, isTouch, site: null, server: false });
 
@@ -219,7 +221,7 @@ export function initMotion(scope = d) {
     left: { x: -60, opacity: 0 },
     right: { x: 60, opacity: 0 },
     scale: { scale: 0.9, opacity: 0 },
-    zoom: { scale: 1.18, opacity: 0, filter: 'blur(8px)' },
+    zoom: { scale: 0.92, opacity: 0, filter: 'blur(8px)' }, // grows into place; never wider than its column
     clip: { clipPath: 'inset(0 0 100% 0)', opacity: 1 },
   };
   els.forEach((el) => {

@@ -62,7 +62,7 @@
 
 /* ---------- base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: auto; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: auto; overflow-x: clip; }
 html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 .lenis.lenis-stopped { overflow: hidden; }
@@ -382,3 +382,43 @@ main, header, footer { position: relative; z-index: 1; }
 .world-cap { position: absolute; right: 12px; bottom: 10px; font-family: var(--font-mono); font-size: .6rem; letter-spacing: .08em; color: rgba(244, 237, 226, .6); }
 .steam { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(40% 30% at 50% 100%, rgba(255, 255, 255, .08), transparent 70%); mix-blend-mode: screen; animation: steam 9s ease-in-out infinite alternate; }
 @keyframes steam { from { transform: translateY(6%); opacity: .4; } to { transform: translateY(-6%); opacity: .9; } }
+
+/* ================= responsive hardening: phones, tablets, PCs ================= */
+/* grid and flex children may shrink below their content, so long words never push the page sideways */
+.grid > *, .split > *, .foot-top > *, .form-row > * { min-width: 0; }
+.spec-table th, .spec-table td, .site-footer, .foot-legal { overflow-wrap: anywhere; }
+a[href^='mailto:'] { overflow-wrap: anywhere; }
+img, video, svg { max-width: 100%; }
+
+/* notch and home-bar safe areas (the viewport uses viewport-fit=cover) */
+.site-header { padding-top: env(safe-area-inset-top, 0px); height: calc(var(--header-h) + env(safe-area-inset-top, 0px)); }
+.mobile-menu { padding-top: calc(var(--header-h) + 24px + env(safe-area-inset-top, 0px)); padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px)); overflow-y: auto; }
+
+/* small screens: buttons may wrap instead of overflowing */
+@media (max-width: 420px) {
+  .btn { white-space: normal; text-align: center; line-height: 1.2; }
+  .btn-lg { font-size: 1rem; padding: 0 1.3em; }
+  .btn-row > .btn { flex: 1 1 auto; }
+}
+
+/* touch: every target at least 44 px (Apple / Google guidance) */
+@media (hover: none), (pointer: coarse) {
+  .logo, .link-arrow { min-height: 44px; }
+  .link-arrow { padding-block: 10px 8px; }
+  .chip:is(a, button) { min-height: 44px; }
+  .faq summary { min-height: 56px; }
+  .site-footer a { display: inline-block; padding-block: 6px; }
+}
+
+/* tablets: comfortable reading width and two-up cards */
+@media (min-width: 768px) and (max-width: 1099px) {
+  .split { gap: clamp(28px, 5vw, 56px); }
+  .lead-wide { max-width: 52ch; }
+}
+/* short landscape screens (small laptops, phones on their side) */
+@media (max-height: 560px) and (orientation: landscape) {
+  .section { padding-block: clamp(56px, 9vw, 104px); }
+  .page-hero { padding-top: calc(var(--header-h) + 32px); }
+}
+/* very large desktops: keep line lengths readable */
+@media (min-width: 1700px) { :root { --max: 1360px; } }
